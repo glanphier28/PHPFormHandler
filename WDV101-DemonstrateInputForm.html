@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WDV101 Intro HTML and CSS</title>
+
+<style>
+
+	form	{
+		width:600px;
+		margin:auto;
+		background-color:lightblue;	
+		padding-left: 20px;
+	}
+	
+	form legend	{
+		font-size:larger;
+		text-align:center;
+	}
+	
+	
+
+
+</style>
+
+</head>
+
+<body>
+<h1>WDV101 Intro HTML and CSS</h1>
+<h2>UNIT 5 - Lesson 2 Server Side Forms</h2>
+<p>This is an example input form that will demonstrate how a form connects to a server side process.</p>
+<form id="form1" name="form1" method="post" action="demonstrateFormHandler.php">
+
+  <legend>Example Form</legend>
+  
+  <p>
+  	<label for="first_name">First Name:</label> 
+    <input type="text" name="first_name" id="first_name" />
+  </p>
+  
+  <p>
+  	<label for="last_name">Last Name:</label> 
+    <input type="text" name="last_name" id="last_name" />
+  </p>
+
+  <p>
+    <label for="student_email">Email:</label>
+    <input type="email" name="student_email" id="student_email" />
+  </p>
+  
+  <p>
+  	<label for="school_name">School Name:</label> 
+    <input type="text" name="school_name" id="school_name" />
+  </p>
+
+  <p>
+    <label for="academic_standing">Academic Standing:</label>
+    <input type="radio" name="academic_standing" id="academic_standing_highschool" value="Highschool">High School</input>
+    <input type="radio" name="academic_standing" id="academic_standing_freshman" value="Freshman">Freshman</input>
+    <input type="radio" name="academic_standing" id="academic_standing_sophomore" value="Sophomore">Sophomore</input>
+  </p>
+
+  <p>
+    <label for="major">Major:</label>
+    <select name="major">
+      <option value="default">Default option</option>
+      <option value="CIS">Computer Information Systems</option>
+      <option value="GRD">Graphic Design</option>
+      <option value="WDV">Web Development</option>
+    </select>
+  </p>
+
+  <p>
+    <input type="hidden" name="contact_program_information" id="contact_program_information" value="no" />
+    <input type="checkbox" name="contact_program_information" id="contact_program_information" value="yes" />
+    <label for="contact_program_information">Please contact me with program information.</label>
+  </p>
+  <p>  
+    <input type="hidden" name="contact_program_advisor" id="contact_program_advisor" value="no" /> 
+    <input type="checkbox" name="contact_program_advisor" id="contact_program_advisor" value="yes" /> 
+    <label for="contact_program_advisor">I would like to contact a program advisor.</label>
+  </p>
+  <p>
+    <label for="commentBox">Comments: </label>
+    <input type="text" id="commentBox" name="commentBox">
+    
+  </p>
+  
+  <p>
+    <input type="submit" name="button" id="button" value="Submit" />
+    <input type="reset" name="button2" id="button2" value="Reset" />
+  </p>
+  
+</form>
+
+<p>&nbsp;</p>
+</body>
+
+</html>
